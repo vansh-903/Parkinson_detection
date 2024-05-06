@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Diagnosis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- add icon link -->
+    <link rel = "icon" href = "image/medical.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare </a>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">services</a>
+            <a href="index.html">about</a>
+            <!-- <a href="#doctors">doctors</a> -->
+            <!-- <a href="#book">book</a> -->
+            <a href="index.html">review</a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+    <main>
+        <section>
+            <div class="home">
+                <div class="image">
+                    <!-- Placeholder image -->
+                    <img src="image/diagnose.gif" alt="Placeholder">
+                </div>
+                <div class="content">
+                    <h3>Early Detection of Alzheimer's Disease</h3>
+                    <p>Upload your PDF, DOC, or CSV file to check for early signs of Alzheimer's disease.</p>
+                    <form id="uploadForm" enctype="multipart/form-data" action="/diagnose" method="post">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" class="box" required>
+                        <label for="file">Upload File:</label>
+                        <input type="file" id="file" name="file" class="box" accept=".pdf,.doc,.docx,.csv" required>
+                        <button type="submit" class="btn">Diagnose <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
